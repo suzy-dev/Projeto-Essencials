@@ -2,6 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import path from 'path'
+import ejs from 'ejs'
 
 
 //config dotenv
@@ -11,6 +12,10 @@ dotenv.config()
 const app = express()
 app.use(express.json())
 
+//config ejs
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
+
 //conf mongodb
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Mongodb configurado'))
@@ -18,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(path.resolve(), 'home.html')); // Caminho absoluto do arquivo home.html
+    res.render('inicio.ejs')
 });
 
 const PORT = process.env.PORT || 5000;
