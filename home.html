@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodízio do Sabor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Buffalo's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./src/carne-1-carrousel.jpg" alt="Carne 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/carne-carrousel.jpg" alt="Carne 0">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/carne-2-carrousel.jpg" alt="Carne 2">
+              </div>
+            </div>
+            <!-- Controles (setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampl
+            eIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero text-center">
+            <h1 class="display-4">O melhor rodízio da cidade!</h1>
+            <p class="lead">Venha saborear as mais deliciosas carnes, acompanhamentos e sobremesas.</p>
+            <button type="button" class="btn btn-primary btn-lg">Faça sua reserva</button>
+        </section>
+
+        <!-- Cardápio Section -->
+        <section class="container">
+            <h2 class="text-center">Acesse nosso cardápio</h2>
+            <div class="row">
+                <!-- Conteúdo do cardápio -->
+            </div>
+        </section>
+
+        <!-- Sobre nós Section -->
+        <section class="container">
+            <h2 class="text-center">Sobre Nós</h2>
+            <p>Conheça nossa história e o que nos torna especiais.</p>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        &copy; 2023 Buffalo's Rodízio
+    </footer>
+</body>
+</html>
