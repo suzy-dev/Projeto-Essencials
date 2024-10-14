@@ -27,34 +27,34 @@
 
     <main>
         <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="/img/carne-1-carrousel.jpg" class="d-block w-100" alt="Carne 1">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/carne-carrousel.jpg" class="d-block w-100" alt="Carne 0">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/carne-2-carrousel.jpg" class="d-block w-100" alt="Carne 2">
-              </div>
-            </div>
-            <!-- Controles (setas) -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampl
-            eIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-resize" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/carne-1-carrousel.jpg" class="d-block w-100" alt="Carne 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carne-carrousel.jpg" class="d-block w-100" alt="Carne 0">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carne-2-carrousel.jpg" class="d-block w-100" alt="Carne 2">
+            </div>
+        </div>
+        <!-- Controles (setas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
 
         <!-- Hero Section -->
         <section class="hero text-center">
@@ -76,7 +76,48 @@
             <h2 class="text-center">Sobre Nós</h2>
             <p>Conheça nossa história e o que nos torna especiais.</p>
         </section>
+
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="reservation-form p-4 shadow-lg rounded">
+                <h1 class="text-center mb-4">Faça sua Reserva</h1>
+                <form action="/reservas" method="POST"> <!-- Certifique-se de que a rota esteja correta -->
+                    <div class="form-group mb-3">
+                        <label for="nomeCliente">Nome completo</label>
+                        <input type="text" name="nomeCliente" id="nomeCliente" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="emailCliente">Email principal</label>
+                        <input placeholder="@gmail.com" type="email" name="emailCliente" id="emailCliente" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="telefone">Número de celular</label>
+                        <input placeholder="(__) ____-____" type="tel" name="telefone" id="telefone" class="form-control" required 
+                               pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}" 
+                               title="Digite o número no formato (xx) xxxx-xxxx">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="mesaQtdPessoas">Quantidade de pessoas</label>
+                        <input type="number" name="mesaQtdPessoas" id="mesaQtdPessoas" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="data">Data da Reserva</label>
+                        <input type="date" name="data" id="data" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="hora">Hora da Reserva</label>
+                        <input type="time" name="hora" id="hora" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="descricao">Descrição (Opcional)</label>
+                        <textarea name="descricao" id="descricao" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Reservar</button>
+                </form>
+            </div>
+        </div>        
     </main>
+
+    
 
     <%- include('./partials/footer') %>
 </body>
