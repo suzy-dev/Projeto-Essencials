@@ -1,9 +1,6 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import connectDB from './database.js'
-import path from 'path'
-import ejs from 'ejs'
 import reservaRoutes from './routes/reservaRoutes.js' // Importa as rotas
 
 //config dotenv
