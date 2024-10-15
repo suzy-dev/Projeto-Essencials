@@ -60,62 +60,38 @@
         <section class="hero text-center">
             <h1 class="display-4">A melhor churrascaria de Brasília!</h1>
             <p class="lead">Faça sua reserva pelo nosso site</p>
-            <button type="button" class="btn btn-primary btn-lg">Faça sua reserva</button>
+
+            <button type="button" class="btn btn-dark">Reserva</button>
         </section>
 
         <!-- Cardápio Section -->
-        <section id="teste" class="container">
-            <h1 class="text-center">Descubra o que torna a Buffalo's única</h2>
-            <h2 class="text-center">Acesse nosso cardápio</h2>
-            <div class="row">
-                <!-- Conteúdo do cardápio -->
+        <section id="teste" class="text-center">
+            <h1 class="display-4">Descubra o que torna a Buffalo's única</h2>
+            <h2 class="lead">Acesse nosso cardápio</h2>
+            <div id="cardapio" class="row">
+                <div id="cardapio-item" class="col-md-4 cardapio-item">
+                    <h5>Frango Grelhado</h5>
+                    <p>Frango suculento grelhado com ervas finas e servido com arroz e salada.</p>
+                    <p class="price">R$ 29,90</p>
+                </div>
+                <div id="cardapio-item" class="col-md-4 cardapio-item">
+                    <h5>Bife à Parmegiana</h5>
+                    <p>Tradicional bife à milanesa coberto com queijo e molho de tomate, acompanhado de arroz e batata frita.</p>
+                    <p class="price">R$ 34,90</p>
+                </div>
+                <div id="cardapio-item" class="col-md-4 cardapio-item">
+                    <h5>Risoto de Camarão</h5>
+                    <p>Risoto cremoso com camarões frescos, temperado com alho e ervas.</p>
+                    <p class="price">R$ 45,00</p>
+                </div>
             </div>
         </section>
 
         <!-- Sobre nós Section -->
-        <section class="container">
-            <h2 class="text-center">Sobre Nós</h2>
-            <p>Conheça nossa história e o que nos torna especiais.</p>
+        <section class="container text-center">
+            <h2 class="display-4">Sobre Nós</h2>
+            <p class="lead">Conheça nossa história e o que nos torna especiais.</p>
         </section>
-
-        <div class="d-flex justify-content-center align-items-center vh-100">
-            <div class="reservation-form p-4 shadow-lg rounded">
-                <h1 class="text-center mb-4">Faça sua Reserva</h1>
-                <form action="/reservas" method="POST"> <!-- Certifique-se de que a rota esteja correta -->
-                    <div class="form-group mb-3">
-                        <label for="nomeCliente">Nome completo</label>
-                        <input type="text" name="nomeCliente" id="nomeCliente" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="emailCliente">Email principal</label>
-                        <input placeholder="@gmail.com" type="email" name="emailCliente" id="emailCliente" class="form-control">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="telefone">Número de celular</label>
-                        <input placeholder="(__) ____-____" type="tel" name="telefone" id="telefone" class="form-control" required 
-                               pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}" 
-                               title="Digite o número no formato (xx) xxxx-xxxx">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="mesaQtdPessoas">Quantidade de pessoas</label>
-                        <input type="number" name="mesaQtdPessoas" id="mesaQtdPessoas" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="data">Data da Reserva</label>
-                        <input type="date" name="data" id="data" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="hora">Hora da Reserva</label>
-                        <input type="time" name="hora" id="hora" class="form-control" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="descricao">Descrição (Opcional)</label>
-                        <textarea name="descricao" id="descricao" class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Reservar</button>
-                </form>
-            </div>
-        </div>        
     </main>
 
     

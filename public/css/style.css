@@ -1,3 +1,5 @@
+
+/* FORMULARIO DE RESERVA */
 .reservation-form {
     width: 100%;
     max-width: 500px; 
@@ -16,4 +18,18 @@ shadow-lg {
 .carousel-item img {
     height: 500px; 
     object-fit: cover;
+}
+
+
+/* CARDAPIO */
+#cardapio{
+    display: inline-block;
+    justify-content: flex-start;
+    flex-wrap: wrap
+}
+
+#cardapio-item{
+    padding: 5%;
+    margin: 1%;
+    border: 2px solid black;
 }
