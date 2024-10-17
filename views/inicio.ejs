@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 <body>
     <header id="navbar" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">Buffalo's</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,27 +65,60 @@
         </section>
 
         <!-- Cardápio Section -->
-        <section id="teste" class="text-center">
-            <h1 class="display-4">Descubra o que torna a Buffalo's única</h2>
-            <h2 class="lead">Acesse nosso cardápio</h2>
-            <div id="cardapio" class="row">
-                <div id="cardapio-item" class="col-md-4 cardapio-item">
-                    <h5>Frango Grelhado</h5>
-                    <p>Frango suculento grelhado com ervas finas e servido com arroz e salada.</p>
-                    <p class="price">R$ 29,90</p>
-                </div>
-                <div id="cardapio-item" class="col-md-4 cardapio-item">
-                    <h5>Bife à Parmegiana</h5>
-                    <p>Tradicional bife à milanesa coberto com queijo e molho de tomate, acompanhado de arroz e batata frita.</p>
-                    <p class="price">R$ 34,90</p>
-                </div>
-                <div id="cardapio-item" class="col-md-4 cardapio-item">
-                    <h5>Risoto de Camarão</h5>
-                    <p>Risoto cremoso com camarões frescos, temperado com alho e ervas.</p>
-                    <p class="price">R$ 45,00</p>
-                </div>
-            </div>
-        </section>
+<section class="container text-center">
+    <h1 class="display-4">Descubra o que torna a Buffalo's única</h1>
+    <h2 class="lead">Acesse nosso cardápio</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne1-cardapio.jpg" alt="Frango Grelhado">
+            <h5>Bife à Parmegiana</h5>
+            <p>Tradicional bife à milanesa coberto com queijo, acompanhado de batata frita.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne2-cardapio.jpg" alt="Bife à Parmegiana">
+            <h5>Frango Grelhado</h5>
+            <p>Frango suculento grelhado com ervas finas e servido com arroz e salada.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne3-cardapio.jpg" alt="Tartar de Carne">
+            <h5>Tartar de Carne</h5>
+            <p>Tartar de carne fresco, temperado com alho e ervas.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne1-cardapio.jpg" alt="Costela no Bafo">
+            <h5>Costela no Bafo</h5>
+            <p>Costela bovina assada lentamente, acompanhada de mandioca cozida.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne1-cardapio.jpg" alt="Frango Grelhado">
+            <h5>Bife à Parmegiana</h5>
+            <p>Tradicional bife à milanesa coberto com queijo, acompanhado de batata frita.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne2-cardapio.jpg" alt="Bife à Parmegiana">
+            <h5>Frango Grelhado</h5>
+            <p>Frango suculento grelhado com ervas finas e servido com arroz e salada.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne3-cardapio.jpg" alt="Tartar de Carne">
+            <h5>Tartar de Carne</h5>
+            <p>Tartar de carne fresco, temperado com alho e ervas.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-2 mx-1 cardapio-item">
+            <img class="cardapio-img" src="/img/carne1-cardapio.jpg" alt="Costela no Bafo">
+            <h5>Costela no Bafo</h5>
+            <p>Costela bovina assada lentamente, acompanhada de mandioca cozida.</p>
+            <p class="price">R$ 84,90</p>
+        </div>
+    </div>
+</section>
 
         <!-- Sobre nós Section -->
         <section class="container text-center">
@@ -93,9 +126,6 @@
             <p class="lead">Conheça nossa história e o que nos torna especiais.</p>
         </section>
     </main>
-
-    
-
     <%- include('./partials/footer') %>
 </body>
 </html>
