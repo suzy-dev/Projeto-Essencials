@@ -57,9 +57,9 @@ shadow-lg {
 /* ABOUSTS*/
 
 .quadro-aboutus{
-    width: 80%;
+    max-width: 80%;
     background-color: #bb6819;
-    height: 25rem;
+    max-height: 25rem;
     border-radius: 50px;
 }
 
