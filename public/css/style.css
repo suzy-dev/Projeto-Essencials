@@ -39,31 +39,6 @@ shadow-lg {
     height: auto; 
     padding: 2rem 0;
 }
-/* FORM DE RESERVA MEDIA QUERY */
-
-@media (max-width: 768px) {
-    .quadro-form {
-        flex-direction: column-reverse; /* Muda a ordem: logo vai para baixo */
-        padding: 1rem; /* Ajuste de padding para melhor encaixe no mobile */
-    }
-
-    .quadro-img, .quadro-text {
-        width: 100%; /* Garantir que ambos os blocos ocupem 100% da largura */
-    }
-
-    .reservation-form {
-        width: 100%; /* Garantir que o formulário ocupe a largura completa */
-        padding: 1rem;
-        margin-bottom: 1.5rem; /* Espaço entre o formulário e a logo */
-    }
-
-    .quadro-img img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Centraliza a imagem */
-    }
-}
 
 /* CARROSEL DE DESTAQUE */
 .carousel-item img {
