@@ -40,3 +40,37 @@ shadow-lg {
     font-size: 1.2rem;
     color: green;
 }
+
+.quadro-info{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #bb6819;
+    height: 37.5rem;
+}
+
+.quadro-info img{
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+}
+
+/* ABOUSTS*/
+
+.quadro-aboutus{
+    width: 80%;
+    background-color: #bb6819;
+    height: 25rem;
+    border-radius: 50px;
+}
+
+.quadro-aboutus-text{
+    padding: 3.5rem;
+    color: aliceblue;
+    align-items: center;
+}
+.quadro-aboutus-text a{
+    color: aliceblue;
+} 
+.quadro-aboutus-text a:hover{
+    background-color: red;
+} 
