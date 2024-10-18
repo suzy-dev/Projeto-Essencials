@@ -20,6 +20,39 @@ shadow-lg {
     object-fit: cover;
 }
 
+/* QUADRO DE INFORMACOES */
+
+.quadro-info-outer {
+    width: 100%; /* Fundo com largura total */
+    background-color: #bb6819; /* Cor de fundo */
+    padding: 2rem 0; /* Espaçamento vertical */
+}
+
+.quadro-info {
+    display: flex;
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    flex-direction: row; /* Colunas lado a lado */
+    align-items: center;
+}
+
+.quadro-img {
+    flex: 1; /* Primeira coluna para imagem */
+    padding-right: 2rem; /* Espaçamento à direita da imagem */
+}
+
+.quadro-img img {
+    width: 100%; /* A imagem ocupa 100% da largura da coluna */
+    height: auto;
+    border-radius: 15px;
+}
+
+.quadro-text {
+    flex: 1; /* Segunda coluna para o texto */
+    color: #fff; /* Texto branco */
+}
+
+
 /* CARDAPIO */
 .cardapio-item {
     border: 2px solid black;
@@ -39,19 +72,6 @@ shadow-lg {
     font-weight: bold;
     font-size: 1.2rem;
     color: green;
-}
-
-.quadro-info{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    background-color: #bb6819;
-    height: 37.5rem;
-}
-
-.quadro-info img{
-    object-fit: cover;
-    width: 5rem;
-    height: 5rem;
 }
 
 /* ABOUSTS*/
