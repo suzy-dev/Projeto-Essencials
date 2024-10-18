@@ -2,9 +2,33 @@
 /* FORMULARIO DE RESERVA */
 .reservation-form {
     width: 100%;
-    max-width: 500px; 
-    background-color: white; 
-    border-radius: 10px; 
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.reservation-form button {
+    background-color: #bb6819; 
+    color: #fff;
+    border: none;
+}
+
+.reservation-form h1 {
+    color: #bb6819;
+}
+
+.reservation-form label {
+    color: #333;
+}
+
+.reservation-form input, .reservation-form textarea {
+    background-color: #f9f9f9; 
+    border: 1px solid #bb6819; 
+}
+
+.reservation-form button:hover {
+    background-color: #9a5415;
 }
 
 shadow-lg {
@@ -12,9 +36,36 @@ shadow-lg {
 }
   
 .vh-100 {
-    height: 100vh; 
+    height: auto; 
+    padding: 2rem 0;
+}
+/* FORM DE RESERVA MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .quadro-form {
+        flex-direction: column-reverse; /* Muda a ordem: logo vai para baixo */
+        padding: 1rem; /* Ajuste de padding para melhor encaixe no mobile */
+    }
+
+    .quadro-img, .quadro-text {
+        width: 100%; /* Garantir que ambos os blocos ocupem 100% da largura */
+    }
+
+    .reservation-form {
+        width: 100%; /* Garantir que o formulário ocupe a largura completa */
+        padding: 1rem;
+        margin-bottom: 1.5rem; /* Espaço entre o formulário e a logo */
+    }
+
+    .quadro-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centraliza a imagem */
+    }
 }
 
+/* CARROSEL DE DESTAQUE */
 .carousel-item img {
     height: 500px; 
     object-fit: cover;
@@ -22,36 +73,35 @@ shadow-lg {
 
 /* QUADRO DE INFORMACOES */
 
-.quadro-info-outer {
-    width: 100%; /* Fundo com largura total */
-    background-color: #bb6819; /* Cor de fundo */
-    padding: 2rem 0; /* Espaçamento vertical */
+.quadro-form-outer {
+    width: 100%; 
+    background-color: #bb6819; 
+    padding: 2rem 0; 
 }
 
-.quadro-info {
+.quadro-form {
     display: flex;
-    max-width: 1200px; /* Limita a largura do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    flex-direction: row; /* Colunas lado a lado */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-direction: row; 
     align-items: center;
 }
 
 .quadro-img {
-    flex: 1; /* Primeira coluna para imagem */
-    padding-right: 2rem; /* Espaçamento à direita da imagem */
+    flex: 1; 
+    padding-right: 2rem; 
 }
 
 .quadro-img img {
-    width: 100%; /* A imagem ocupa 100% da largura da coluna */
+    width: 100%;
     height: auto;
     border-radius: 15px;
 }
 
 .quadro-text {
-    flex: 1; /* Segunda coluna para o texto */
-    color: #fff; /* Texto branco */
+    flex: 1;
+    color: #fff; 
 }
-
 
 /* CARDAPIO */
 .cardapio-item {
