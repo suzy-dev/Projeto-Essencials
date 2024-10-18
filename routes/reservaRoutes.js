@@ -3,6 +3,6 @@ import { criarReserva } from '../controllers/reservaController.js';
 
 const router = express.Router();
 
-router.post('/reservas', criarReserva);
+router.post('/reserva', criarReserva);
 
 export default router;

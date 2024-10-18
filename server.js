@@ -11,19 +11,21 @@ connectDB()
 
 //config Express
 const app = express()
-app.use(express.json()) // Para que o Express possa interpretar JSON
-app.use(express.urlencoded({ extended: true })) // Para que o Express possa interpretar dados de formulários
+app.use(express.json()) 
+app.use(express.urlencoded({ extended: true }))
 
 //config EJS
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
-//rota de reserva
-app.use('/reserva', reservaRoutes); 
-
 app.get('/', (req, res) => {
     res.render('inicio.ejs')
 });
+
+//rota de reserva
+app.post('/reserva', (req, res)=>{
+    console.log()
+}); 
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Servidor aberto na porta ${PORT}`))
